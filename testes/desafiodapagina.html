@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não acessivel?</title>
+    <style>
+        body {
+    cursor: not-allowed; /* O círculo vermelho aparece em todo lugar vazio */
+    user-select: none;   /* Impede o usuário de selecionar o texto pra procurar o link */
+}
+
+a {
+    cursor: pointer; /* Quando passar o mouse no link, volta a ser o cursor de clique */
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+  </div>
+
+<script>
+  const container = document.getElementById('container');
+  const totalLinks = 500; // Quantidade de links falsos
+  const saidaIndex = Math.floor(Math.random() * totalLinks); // Escolhe um número aleatório para ser a saída
+
+  for (let i = 0; i < totalLinks; i++) {
+    const link = document.createElement('a');
+    link.href = "#";
+    link.innerText = "SAIA! ";
+    
+    if (i === saidaIndex) {
+      // Este é o link REAL
+      link.onclick = function() { alert("Você venceu!"); window.location.href = "sucesso.html"; };
+      link.style.color = "red"; // Dica opcional: deixe o real levemente diferente ou igual
+    } else {
+      // Links falsos apenas mostram um alerta ou não fazem nada
+      link.onclick = function() { alert("ERROU! Tente novamente."); };
+    }
+    
+    container.appendChild(link);
+  }
+</script>
+ <script>
+     window.onbeforeunload = function() {
+      return "Você tem certeza que quer desistir do desafio?";
+     };
+ </script>  
+</body>
+</html>

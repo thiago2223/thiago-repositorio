@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes e Desafios.</title>
+    <style>
+       
+                @charset"UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: Zenitha;
+  src: url(../fontes/zenitha_classic/ZenithaClassic_PERSONAL_USE_ONLY.otf)
+    format(opentype);
+}
+
+@font-face {
+  font-family: Bohemian;
+  src: url(../fontes/Bohemian\ Soul.otf) format(opentype);
+}
+
+@font-face {
+  font-family: Nicholas;
+  src: url(../fontes/Nicholas.otf) format(opentype);
+}
+
+@font-face {
+  font-family: Sunflower;
+  src: url(../fontes/MADE\ Sunflower\ PERSONAL\ USE.otf) format(opentype);
+}
+
+@font-face {
+  font-family: "Serif Pro Bold";
+  src: url(../fontes/SourceSerifPro-Bold.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Serif Pro Regula";
+  src: url(../fontes/SourceSerifPro-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Serif Pro Semibold";
+  src: url(../fontes/SourceSerifPro-Semibold.ttf) format(truetype);
+}
+
+* {
+  h1 {
+    text-align: center; /* Só coloquei pra não ficar vazio */
+  }
+}
+
+pre {
+  font-family: Merriweather;
+
+  font-size: 0.69em;
+}
+
+p {
+  font-family: "Serif Pro Regular";
+  text-align: justify;
+  font-size: 19px;
+}
+
+body {
+  background-image: linear-gradient(to right, #f0e4d4, #cbbca9);
+}
+
+main {
+  max-width: 1100px;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #7a5629b7;
+}
+
+/*
+h1{
+    color: #BF5E3B;
+    text-align: center;
+    text-shadow: 1px 1px 0px #aa8a4ec6;
+}
+
+
+
+h2{
+    color: #21A675;
+
+}
+
+
+h3{
+    color:#8DAEF2;
+}
+
+
+h4{
+    color: #F2D544;
+}
+
+
+h5{
+    color: #6E574D;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2c4049;
+  font-family: Montserrat;
+  font-size: 24px;
+}
+
+
+#Titulo-principal{
+    color:rgb(23, 42, 62);
+    font-size: 28px;
+}
+
+
+
+code{
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+a:visited{
+  color: #11ff00;
+}
+a:hover{
+  color: darkblue;
+  text-decoration: underline;
+}
+        .link-nao-acessivel{
+            cursor:not-allowed;
+            pointer-events: none;
+
+        }
+#div-teste{
+  display: inline-block;
+  background-color: #f7ffa5ab;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}
+
+.toggle-input{
+  display: none;
+}
+
+.links{
+  display: none;
+  box-shadow:1px 1px 1px #7a552980;
+    border-radius: 3px;
+}
+.toggle-input:checked ~ .links{
+  display: block;
+}
+.menu-label{
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  user-select: none;
+}
+
+#pou-teste{
+  max-width: 70%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testes</h1>
+        <h2>Imagens-Mapa mundi</h2>
+        <img src="mapa03.png" alt=""> <img src="mapa07.png" alt=""> <img src="mapa05.png" alt="">
+        <br>
+        <img src="mapa09.png" alt=""> <img src="mapa01.png" alt=""> <img src="mapa08.png" alt="">
+        <br>
+        <img src="mapa06.png" alt=""> <img src="mapa02.png" alt=""> <img src="mapa04.png" alt="">
+        
+        <h2>Desafio de navegação:</h2>
+        <a href="desafio-de-navegação/página-lavanda-1.html" rel="next" target="_self">Acessar o desafio</a>
+        <h2>Desabilitando elementos web</h2>
+        
+        <div style="cursor: not-allowed;"><a href="pagina-nao-acessivel.html" class="link-nao-acessivel">Você não consegue clicar aqui. Eu acho...</a></div> <!--Feito por min-->
+        <p>Talvez consiga.</p>
+        <a href="desafiodapagina.html">Nem aqui!</a> <!--Feito por ia-->
+        <br><br><br>
+        
+        <div class="menu-teste">
+          <input type="checkbox" id="menu-toggle" class="toggle-input">
+          <label for="menu-toggle" class="menu-label">Acesse também</label>
+          <ul class="links">
+        <li><a href="../Guia-resumido/index.html" style="color: gold;" rel="external">Meu Guia Resumido de HTML5 e CSS3</a></li>
+        <li><a href="../Site de confeitaria/" style="color: powderblue;" rel="external">Página de confeitaria feita por ia</a></li>
+        <li><a href="teste-estilos-cor001.html" rel="external">teste de cor- 001</a></li>
+        <li><a href="teste-estilos-cor002.html" rel="external"> teste de cor- 002</a></li>
+        <li><a href="teste-estilos-cor003.html" rel="external">teste de cor- 003</a></li>
+        <li><a href="../fontes/fontes-001.html" rel="external">teste com fontes 01</a></li>
+        </ul>
+        </div>
+
+       <pre style="display: flexbox;">
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddcagefgefgfgefdevfscccscsdcdcsdcjhefvhefkvhbefkhvbefvw
+       </pre>c
+        
+       <br><br><br><br><picture>
+        
+       <img src="../imagens/CIRCULO-CROMATICO-14-original.jpg" alt="" id="pou-teste">
+        
+        <p>Acesse também:</p>
+        <ul>
+        <li><a href="../Guia-resumido/index.html" style="color: gold;" rel="external">Meu Guia Resumido de HTML5 e CSS3</a></li>
+        <li><a href="../Site de confeitaria/" style="color: powderblue;" rel="external">Página de confeitaria feita por ia</a></li>
+        <li><a href="teste-estilos-cor001.html" rel="external">teste de cor- 001</a></li>
+        <li><a href="teste-estilos-cor002.html" rel="external"> teste de cor- 002</a></li>
+        <li><a href="teste-estilos-cor003.html" rel="external">teste de cor- 003</a></li>
+        <li><a href="../fontes/fontes-001.html" rel="external">teste com fontes 01</a></li>
+        </ul>
+    </main>
+
+    
+
+
+</body>
+</html>
