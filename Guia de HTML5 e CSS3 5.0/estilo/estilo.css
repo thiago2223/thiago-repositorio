@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0: #3daad9;
+    --cor1: #225f7b;
+    --cor2: #007bff;
+    --cor3: #172A3E;
+    --fonte-titulo: 'Ms Madi';
+    --fonte-titulo-2-ou-normal: Montserrat;
+    --fonte-titulo-3: Poppins;
+    --fonte-padrao: Arial, Helvetica, Sans-serif;
+    --fonte-paragrafo: Montserrat;
+
+}
+body{
+    background-color: antiquewhite;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    padding: 40px;
+    text-align: center;
+}
+header > h1{
+    color: white;
+    font-family: var(--fonte-titulo-2-ou-normal);
+    font-size: 3.5em;
+    text-shadow: 5px 6px 5px #00000073;
+    margin: auto;
+}
+header > p{
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: var(--fonte-padrao);
+     text-shadow: 5px 6px 5px #00000073;
+}
+nav{
+    background-color: var(--cor1);
+}
+nav > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px 0px 15px;
+    border-radius: 5px;
+}
+nav >a:hover{
+    background-color: var(--cor0);
+    transition-duration: 0.5s;
+}
+.tema-assunto{
+    display: none;
+}
+nav > a:hover > .tema-assunto{
+    display: inline;
+}
+main{
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    min-width: 230px;
+    max-width: 1111px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main > article >h1, h2, h3, h4, h5, h6{
+    font-family: var(--fonte-titulo-3);
+    color: var(--cor3);
+}
+main > article > h1.titulo-principal{
+    text-align: center;
+    font-size: 3em;
+}
+main > article > h1.titulo-do-assunto{
+    font-size: 2em;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+main > article > p{
+    font-family: var(--fonte-paragrafo);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 300;
+}
+main > article > ul{
+    margin-left: 30px;
+    columns: 2;
+}
+img{
+    width: 50%;
+    padding: 0px 0px 25px 10px;
+}
+div.imagen-flex{
+    display: flex;
+    align-items: justify;
+    gap: 20px;
+}
+div.imagen-flex > p{
+    margin-top: 40px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 14px;
+    font-weight: 200;
+}
+.assunto-ou-tema > a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    padding: 15px;
+    margin-left: 30px;
+}
+.assunto-ou-tema > a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgba(156, 155, 155, 0.721);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

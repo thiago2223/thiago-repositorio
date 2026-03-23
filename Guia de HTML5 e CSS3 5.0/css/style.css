@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: Zenitha;
+  src: url(../fontes/zenitha_classic/ZenithaClassic_PERSONAL_USE_ONLY.otf)
+    format(opentype);
+}
+
+@font-face {
+  font-family: Bohemian;
+  src: url(../fontes/Bohemian\ Soul.otf) format(opentype);
+}
+
+@font-face {
+  font-family: Nicholas;
+  src: url(../fontes/Nicholas.otf) format(opentype);
+}
+
+@font-face {
+  font-family: Sunflower;
+  src: url(../fontes/MADE\ Sunflower\ PERSONAL\ USE.otf) format(opentype);
+}
+
+@font-face {
+  font-family: "Serif Pro Bold";
+  src: url(../fontes/SourceSerifPro-Bold.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Serif Pro Regula";
+  src: url(../fontes/SourceSerifPro-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Serif Pro Semibold";
+  src: url(../fontes/SourceSerifPro-Semibold.ttf) format(truetype);
+}
+
+
+
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #fff5e9, #ede0ce);
+            
+        }
+        header{
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: rgba(255, 245, 236, 0.622);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.322);
+            border-radius: 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(161, 202, 255);
+            margin-right: 40px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: darkblue;
+        }
+        main{
+           /* background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            min-width: 250px;
+            max-width: 1000px;
+            margin: auto;*/
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 250px;
+            max-width: 1400px;
+            margin: auto;
+        }
+        article{
+            background-color: rgba(222, 221, 221, 0.658);
+        }
+        article > aside{
+            background-color: rgba(169, 169, 169, 0.658);
+        }
+        footer{
+            background-color: rgb(43, 43, 43);
+            color: white;
+            margin: 10px;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        .assunto{
+            text-decoration: underline;
+        }
+img{
+  width: 80%;
+}
+p {
+  font-family: "Serif Pro Regular";
+  text-align: justify;
+  font-size: 19px;
+  margin-right: 75px;
+
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2c4049;
+  font-family: Montserrat;
+  font-size: 24px;
+}
+
+
+
+ul{
+  font-family: "Serif Pro Regular";
+  text-align: justify;
+  font-size: 19px;
+}
+
+
+h2{
+  font-size: 2em;
+}
+#Titulo-principal{
+    color:rgb(23, 42, 62);
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+
+
+div:hover{
+  background-color: #a6ff00;
+}
+
+
+
+#div-de-exemplo-em-elementos-dentro-de-uma-div{
+  display: inline-block;
+  background-color: #f7ffa5ab;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}
+
+
+#div-de-exemplo-em-elementos-dentro-de-uma-div > p{
+  display: none;
+}
+
+
+#div-de-exemplo-em-elementos-dentro-de-uma-div:hover > p{
+  display: block;
+  color: #11ff00;
+  border: 1px solid black;
+
+}
+
+code{
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+a:visited{
+  color: #11ff00;
+}
+a:hover{
+  color: darkblue;
+  text-decoration: underline;
+}
+.especial{
+
+    box-shadow:1px 1px 1px #7a552980;
+    border-radius: 3px;
+  
+}
+.especial::before{
+  content: '\27A1';
+}
+
+
+.especial::after{
+  content: '\2B05';
+}
+
+
+.download::after{
+  content: ' \2913';
+}
+
+.links-externos-ou-nao::after{
+  content: '\1F517';
+}
+
+
+.noticias::after{
+  content: '\1F4E2';
+}
+
+
+.progamaçao::after{
+  content: '\1F4BB';
+}
+  
+
+
+#links-externos-ou-nao::after{
+  content: '\1F517';
+}
+
+
+/*batata*/
+

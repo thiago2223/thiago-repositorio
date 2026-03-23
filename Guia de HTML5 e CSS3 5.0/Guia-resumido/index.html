@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Site de teste</title>
+</head>
+<body>
+    <header>
+        <h1>Guia Resumido HTML5 e CSS3</h1>
+        <p>Um guia rapido e pratica para você aprender de uma vez!</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Temas</a>
+        <a href="#">Fale conosco</a>
+    </nav>
+    <main>
+        <article>
+            <h1 class="titulo-principal">HTML5 e CSS3</h1>
+                    
+                    <div class="imagen-flex">
+                        <img src="../imagens/html5-e-css3.jpg" alt="Imagen da logo do html5 e css3">
+                        <p>HTML5 e CSS3 são linguagens de marcação de texto. Muito versatil, e é usada em praticamente todos os sites de hoje em dia!</p>
+                    </div> 
+            <hr>
+            <div class="assunto-ou-tema"><a href="">HTML5</a> <a href="">CSS3</a></div>
+            <h2>Fundamentos</h2>
+                <p>A internet não surgiu da noite para o dia. Na verdade, ela começou como um projeto militar nos Estados Unidos, lá nos anos 60, durante a Guerra Fria. Naquela época, a ideia era criar uma rede de comunicação segura e resistente a ataques para manter a comunicação entre bases militares.</p>
+
+            <p>O primeiro passo foi dado em 1969, quando o Departamento de Defesa dos Estados Unidos criou a ARPANET (Advanced Research Projects Agency Network). O objetivo era conectar computadores em diferentes locais para que eles pudessem se comunicar entre si, mesmo que uma parte da rede fosse danificada. A ARPANET começou conectando quatro universidades americanas e, aos poucos, foi crescendo, abrindo portas para novos avanços.</p>
+
+            <h3>O que é a ARPANET?</h3>
+            <p>A ARPANET foi a “avó” da internet. No início, ela era um experimento científico que permitia a troca de mensagens entre computadores. Os computadores, na época, eram gigantescos e ocupavam salas inteiras, mas já era possível enviar mensagens simples entre eles.</p>
+
+            <p>Uma curiosidade é que a primeira mensagem enviada na ARPANET foi “LOGIN”, mas, devido a uma falha, só as letras “L” e “O” foram transmitidas. Foi um começo bem simples, mas cheio de significado, porque provava que era possível comunicar-se por uma rede de computadores.</p>
+
+            <h3>e-mail</h3>
+            <p>Nos anos 70, uma inovação importante foi o e-mail. Esse recurso, inventado pelo programador Ray Tomlinson, foi o primeiro grande sucesso da ARPANET e permitiu que as pessoas trocassem mensagens de maneira mais rápida e eficiente. O símbolo “@”, que usamos hoje, nasceu aqui para indicar o destinatário e o domínio da mensagem. Esse foi um marco na história da internet!</p>
+
+            <h3>A internet moderna</h3>
+            <p>Nos anos 80, a ARPANET começou a crescer e evoluir para o que seria a internet como conhecemos hoje. Foi nesse período que surgiu o TCP/IP, o conjunto de protocolos que define as regras de comunicação entre computadores e que ainda é a base da internet. Em 1983, a ARPANET adotou o TCP/IP, e várias outras redes começaram a se conectar, formando a grande rede global.</p>
+
+            <p>Mas o que realmente popularizou a internet foi a criação da World Wide Web em 1989, por Tim Berners-Lee. A WWW trouxe a ideia de páginas da web e links, permitindo a criação de sites, blogs e o acesso ao que chamamos de internet. Em 1993, com o lançamento do primeiro navegador, o Mosaic, as pessoas comuns começaram a explorar a internet, e o resto é história!</p>
+
+            <h3>protocolos</h3>
+            <ul>
+                <li>IP (Internet Protocol - IPv4/IPv6): Responsável pelo endereçamento e roteamento dos pacotes para o destino correto.</li>
+                <li>TCP (Transmission Control Protocol): Garante a entrega confiável, ordenada e sem erros dos pacotes.</li>
+                <li>UDP (User Datagram Protocol): Mais rápido que o TCP, mas menos confiável, usado para streaming e jogos.</li>
+                <li>HTTP/HTTPS (HyperText Transfer Protocol): Base para a transferência de páginas web (HTTPS adiciona criptografia de segurança).</li>
+                <li>FTP (File Transfer Protocol): Utilizado para transferência de arquivos entre máquinas.</li>
+                <li>SMTP, IMAP, POP3: Protocolos para envio e recebimento de e-mails.</li>
+                <li>DNS (Domain Name System): Traduz nomes de domínios (ex: google.com) em endereços IP. </li>
+
+            </ul>
+                <h2>Ferramentas</h2>
+                <h3>Visual Studio Code</h3>
+                <p>Para baixar é simples, procure por Visual Studio Code no Google entre no site que aparecer primeiro (O oficial) e baixe o progama (bem simples né).</p>
+            <p>Agora vem a parte das configurações: Primeiro vamos deixar em português, para isso, va para a opção extensões, e pesquise por portuguese, e baixe o primeiro que aparecer, depois disso vá para as configurações do Visual Studio Code (é só clicar em uma engrenagem no canto inferior esquerdo da tela) e na aba de pesquisa, pesquise por word wrap, e coloque em on, isso serve para quando a sua linha de codigo estiver um pouco extensa o progama gerar uma quebra de linha, para o codigo não ficar um pouco grande, ou até bagunçado. </p>
+            <p>Depois disso, pesquise por size, que é o tamanho da fonte, caso a fonte (as letras) esteja muito pequena basta aumentar. E por ultimo, pesquise por theme e escolha entre, escuro (padrão do progama) ou claro.</p>
+            <br>
+            <p> Pronto, com tudo feito, você vai fazer o seguinte: Você vai criar uma pasta nos arquivos do seu computador e abrir essa pasta com o Visual Studio Code, basta clicar nela com o botão direito do mause e selecionar abrir com, e escolher o Visual Studio Code. Após abrir você vai ver isso aqui:</p> 
+            <br><br><br>                 
+                        <picture>
+            <source media="(max-width: 750px)" srcset="../imagens/imagen-exemplo-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="../imagens/imagen-exemplo-m.png" type="image/png">
+            <img src="../imagens/imagen-exemplo-g.png" alt="">
+            </picture></p>
+                <br><br>
+            <p>Você vai clicar em novo arquivo, ao clicar vai aparecer uma pequena aba, nela você vai digitar index.html (EXATAMENTE ASSIM) e apertar enter. depois disso, você vai voltar na pasta que você criou, e lá vai ter um novo arquivo dentro da pasta, esse arquivo é o index, que ao abrir você vai ser levado a uma pagina do Google, essa pagina é o seu site, que você vai criar usando o Visual Studio Code, recomendo você deixar o Visual Studio Code e a pagina no Google abertos, para você trabalhar no codigo enquanto vê o resultado na pagina do Google.</p>
+            <p>Uma coisa: sempre que você criar um codigo ou digitar algo, você tem que atualizar a pagina para ver o resultado.</p>
+            <p>A parte do codigo é simples, no lugar onde você vai digitar o codigo, você vai fazer o seguinte, digitar <code>!</code> e clicar enter, só isso, e você ja vai ter a base para o codigo html, e na base para o codigo, mude o idioma primordial no site (que vai estar como en) para exatamente: pt-br.</p>
+        <h4>Dica</h4>
+            <p> No seu teclado, segure a tecla control (ctrl) e enquanto segura clique na tecla espaço. Após isso, vai aparecer um pequeno retângulo, nesse retângulo vai estar o arquivo index e algun outro arquivo ou pasta caso você tenha, clique na imagen, isso é bom por que você não vai precisar digitar o nome do arquivo letra por letra.</p>
+            <p>Outra coisa, você pode colocar imagens que estejam tanto na pasta, como em uma sub pasta, ou só colocando a URL mesmo.</p>
+        <h4>Dica 2</h4>
+            <p>No Visual Studio Code existe um atalho que se acessa usando control(ctrl) + shift + p. Aparecera uma tela, nessa tela você vai digitar 'abb' e então dar enter e digitar a tag que você quiser usar. Basicamebnte, você irá envelopar aquilo que foi selecionado. </p>
+                <h2>Titulos</h2>
+            <p>Para titulo é só usar a tag <code>&lt;h1&gt;&lt;h1&gt;</code> como um titulo principal, e <code>&lt;h2&gt;&lt;/h2&gt;</code> como um subtitulo, e assim sucessivamente até h6.</p>
+
+
+
+        <h2>Paragrafos: <code>&lt;p&gt; ... &lt;/p&gt;</code> </h2>
+            <p>Para escrever paragrafos, basta colocar tudo que você quer escrever no meio das tags <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>. Assim:<code>&lt;p&gt;</code>texto<code>&lt;/p&gt;</code></p>
+
+
+
+        <h2>Quebras de linha:<code> &lt;br&gt;</code></h2>
+            <p>Para quebras de linha, basta colocar a tag <code>&lt;br&gt;</code> abaixo do que desejar. <br>Exemplo: <br>
+            <br>
+            Eu passeava pela rua
+            <br>
+            <code>&lt;br&gt;</code> <br>
+            Até que vi um gato! Gatos são legais.</p>
+
+
+
+        <h2>Simbolos &Delta;!</h2>
+            <p>Para simbolos é sò usar & + uma palavra chave e ; Simples! Exemplo: & + reg e ; =  &reg;  <br> <br>
+            & + copy e ; para: &copy;
+            <br><br>
+            & + trade e ; para: &trade;
+            <br><br>
+            & + euro e ; para: &euro;
+            <br><br>
+            & + pound e ; para: &pound;
+            <br><br>
+            & + cent e ; para: &cent;
+            <br><br>
+            & + delta e ; para: &delta;  ou & + Delta e ; para: &Delta;
+            <br><br>
+            & + yen e ; para: &yen;
+            <br><br>
+            & + uparrow e ; para: &uparrow;
+            </p>
+
+
+
+        <h2>Emojis &#x1F643; &#x270C;</h2>
+            <p>Para emojis, o passo a passo é: Vá para o site emojipedia, escolha o seu emoji. Depois va em informações tecnicas e copie o codigo que representa o emoji. Apos copiar, va para o seu documento html e digite a tag &#x + o codigo que você copiou e finalize com ; (ponto e virgula).</p>
+            <br>
+            <p> Exemplo: &#x + 1F643 e ; (ponto e virgula). Que ficaria: &#x1F643;</p>
+
+
+
+        <h2>Carga e imagens</h2>
+            <p>Você pode e deve, colocar imagens no seu site! E para isso você deve primeiro entender uma coisa, você NÃO pode colocar qualquer imagen no seu site, pois ela pode ter direitos autorais. Mas como pegar uma imagen sem direitos autorais? É simples!</p>
+            <p> Procure no Google a imagen que você deseja, e logo em seguida acesse 'ferramentas' e coloque os direitos de uso como Creative Communs (CC). Assim todas as imagens que aparecer serão livres para uso, seja uso comercial ou com modificação. Ou você pode ir no site unsplash, e procurar a imagen que você quer, todas as imagens lá são livres para uso.</p>
+            <p>Agora que você sabe como procurar uma imagen sem que ela tenha direitos autorais, vou te ensinar como colocar uma imagen no seu site.</p>
+            <p> Basta você digitar <code>&lt;img src="" alt=""&gt;</code></p>
+            <p>Em <code>src=""</code> você vai colocar o endereço da imagen (Ou URL), e para isso, basta você clicar com o botão direito do mouse na imagen e depois clicar em copiar endereço. E em <code>alt=""</code> você vai fazer uma breve descrição da imagen, para aqueles que de alguma forma não conseguem ver a imagen. Ou você baixa a imagen, e coloca ela junto dos arquivos do seu site, e no vs code, é só apertar crtl + espaço. Que irá aparecer os arquivos.</p>
+
+
+
+        <h2>background-color</h2>
+            <p><code>background-color</code> é uma tag CSS3 que serve para mudar a cor de fundo do seu site. Mas como usa-la? É simples! Basta você ir ate a área head do seu codigo HTML5 e adicionar a tag <code>&lt;style&gt;&lt;/style&gt;</code>. E dentro da tag você vai adicionar outra tag, a tag <code>body</code> (sem os &lt;&gt;),e então abrir chaves ( {} ). Dentro das chaves, basta adicionar a tag<code> background-color:rgb(x,x,x);</code> Agora é só mexer na cor até ficar do jeito que você quer.
+            </p>
+
+
+
+        <h2>Endereço</h2>
+            <p>Vou mostrar como funciona na base de exemplos. Se você quiser dizer um endereço, basta fazer isso. Ex: eu moro na<code> &lt;address&gt;</code>Rua X, X - X - AL <code>&lt;/address&gt;</code></p>
+
+
+        <h2>Formatação de textos</h2>
+        <h3>Principais formatações</h3>
+            
+        <h4>Negrito/Destaque</h4>
+            <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag <code>&lt;strong&gt;&lt;/strong&gt;</code></p>
+            <p>Nesta frase temos um <b>termo em destaque</b> usando a tag <code>&lt;b&gt;&lt;/b&gt;</code>.</p>
+
+        <h4>Itálico/Ênfase</h4>
+            <p>Nesta frase temos um <i>termo em itálico</i> usando a tag <code>&lt;i&gt;&lt;/i&gt;</code>.</p>
+            <p>Nesta frase temos um <EM>termo em Ênfase</EM> usando a tag <code>&lt;EM&gt;&lt;/EM&gt;</code>.</p>
+
+        <h4>Texto marcado</h4>
+            <p>Podemos fazer <mark style="background-color: orange;">textos marcados</mark> com a tag <code>&lt;MARK&gt;&lt;/MARK&gt;.</code></p>
+            <p>Ou <mark>textos marcados</mark> com <code>style</code></p>
+
+        <h4>Texto grande e pequeno</h4>
+        <p>Para deixar textos <big>grandes</big> ou <small>pequenos</small> é só usar a tag <code>&lt;big&gt;&lt;/big&gt;</code> ou a tag <code>&lt;small&gt;&lt;/small&gt;</code>.</p>
+        <p>Porém!... A tag big está <MARK style="background-color: orange;">obsoleta!</MARK> Portanto não é recomendado que você a use. Mesmo que ela ainda esteja funcionando, pois ela pode parar de funcionar em breve. </p>
+
+        <h4>Texto deletado </h4>
+            <p>Marcar um texto como <del>deletado</del> serve para indicar que ele deve ser lido, mas nâo considerado. E para fazer isso você deve usar a tag <code>&lt;del&gt;&lt;/del&gt;</code>.</p>
+
+        <h4>Texto inserído</h4>
+            <p>Marcar um texto como <ins>inserído</ins> significa dar ênfase e indicar que ele foi adicionado depois. Para fazer isso basta usar a tag <code>&lt;ins&gt;&lt;/ins&gt;</code></p>
+        <p>Tambem podemos fazer <u>isso</u> com a tag<code> &lt;u&gt;&lt;/u&gt;</code>.</P>
+
+        <h4>Texto sobrescrito</h4>
+        <p>Um texto sobrescrito serve para coisas como x-2<sup>3</sup>+3. Para marcar um texto como sobrescrito é só usar a tag <code>&lt;sup&gt;&lt;/sup&gt;</code>. Basicamente tudo que estiver dentro da tag <code>&lt;sup&gt;&lt;/sup&gt;</code>, ficara como o 2<sup>3</sup> ou ex<sup>x</sup>.</p>
+
+        <h4>Texto subscrito</h4>
+        <p>Um texto subscrito serve para coisas do tipo H<sub>2</sub>O. Para fazer isso basta usar a tag sub. Basicamente tudo que estiver dentro da tag <code>&lt;sub&gt;&lt;/sub&gt;</code> ficara um pouco para 
+        baixo, como aqui: Ex<sub>x</sub>.</p>
+
+        <h3>Outras formatações</h3>
+
+        <h4>Código-fonte / Pré-formatação</h4>
+            <p>Ex: O comando document.getElementById('teste') é escrito em linguagem JavaScript.</p>
+            <p>Se você prestar atenção, o codigo apresentado não parece realmente um codigo, tá até meio dificil de ler, por conta da fonte. E para resolver isso, é só colocar o codigo, dentro da tag<code> &lt;code&gt;</code><code>&lt;/code&gt;</code>:</p>
+            <p><code>get.ElementById('teste')</code></p>
+
+        <h5>Outro exemplo</h5>
+            <p>
+        num = int(input('digite um número'))
+        if num % 2 == 0:
+        print(f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do progama')
+            </p>
+            <p>Denovo, aqui acontece o mesmo, mas... Ao usarmos a tag <code> &lt;code&gt;</code><code>&lt;/code&gt;</code>, ele fica assim:</p>
+            <p><code>
+        num = int(input('digite um número'))
+        if num % 2 == 0:
+        print(f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do progama')
+        </code></p>
+            <p>Pode até parecer com um código, mas não está com os espaçamentos que eu coloquei. Para isso, basta colocar tudo dentro da tag pre:</p>
+        
+        <pre>
+        num = int(input('digite um número'))
+        if num % 2 == 0:
+        print(f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do progama')                                              
+        </pre>
+
+        <h4>Citações simples</h4>
+            <p>Como dizem: <q>O computador é um burro muito rápido.</q></p>
+            <p>Explicando brevemente, ao colocar um texto dentro da tag <code>&lt;q&gt;&lt;/q&gt;</code> ele ficara automaticamente com aspas, como em uma citação.</p>
+        <h4>Citações completas</h4>
+            <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+            <blockquote> <!--Dentro de blockquote, você pode colocar cite,  para mostar ao navegador, colocando a url, o livro a qual você refere.-->
+            <p>A diferença entre os elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</p>
+            </blockquote>
+            <p>Citações completas, são coisas como citações em livros. Para isso, basta colocar a o texto dentro da tag <code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>.</p>
+        <h4>Abreviações</h4>
+            <p>Eu amo HTML e CSS.</p>
+            <p>HTML e CSS, são Abreviações, e para marcá-las como Abreviações, basta coloca-las entre as tags <code>&lt;abbr title=""&gt;&lt;/abbr&gt;</code></p>
+            <p>E em <code>title</code>, colocar o significado da Abreviação.</p>
+            <p>Aqui está um exemplo de como fica quando você usa essa tag, basta passar o mouse por cima para ver:</p>
+            <p>Eu amo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+                <h2>Tag &lt;hr&gt;</h2>
+            <p>A tag<code style="font-family: 'Times New Roman', Times, serif;"> &lt;hr&gt;</code> coloca uma linha abaixo do seu titulo, como tá no inicio da pagina.</p>
+        <h2>Como colocar <code>&lt;&gt;</code></h2>
+            <p>para colocar &lt;&gt; sem que seja tratado como um codigo, e sim parte do texto, basta usar & + lt e ; e finalizar com & + gt e ;</p>
+        <h2>Comentários</h2>
+            <p>Para fazer Comentários no seu codigo você deve usar
+            &lt;!--Aqui você escreverá seu comentário.--&gt;
+            </p>
+        <h2>Listas</h2>
+        <h3>Listas ordenadas</h3>
+            <p>Listas ordenadas são listas que seguem em ordem crescente, exemplo: 1, 2, 3, 4. Ou a, b e c.</p>
+            <p>Para criar listas ordenadas você deve usar a tag <code>&lt;ol&gt;&lt;/ol&gt;</code> e dentro da tag <code>&lt;ol&gt;&lt;/ol&gt;</code> você irá colocar outra tag, a tag <code>li</code>. Não é obrigatório colocar uma tag de fechamento na tag <code>li</code>. É na tag <code>&lt;li&gt;</code> que você colocará o item da sua lista, e se você precisar de mais de um item, o que geralmente é o caso, basta abrir outra tag <code>&lt;li&gt;</code>.</p>
+            <p>Seguindo esses passos, é assim que ficaria o codigo:</p>
+        
+        <pre>
+        <code>
+        &lt;ol&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+        </code>
+        </pre>
+            <p>E assim ficaria a sua lista:</p>
+                <ol type="" start="1">
+                <li>Acordar</li>
+                <li>Tomar café da manhã</li>
+                <li>Escovar os dentes</li>
+                </ol>
+            <p>Além disso, você pode personalizar a tag <code>&lt;ol&gt;&lt;/ol&gt;</code>. Você pode fazer a lista em letras: a, b, c... Ou em números mesmo, ou em algarismos românos, letras maiusculas, algarismos minusculos.</p>
+            <p>E para issso é só, na tag <code>&lt;ol&gt;&lt;/ol&gt;</code>, você dar um espaço depois do ol e digitar <code>type=""</code>. Aí você pode escolher entre 1 (números), A (letras maiusculas), a (letras minusculas), i (algarismos românos em minusculo) e I (algarismos românos em maiusculo).</p>
+            <p>Outra coisa, você pode indicar quando a lista começa, seja no 1, 2, 3, ou no a, b, c, no I, II, usando o tag start, basta dar um espaço após a tag type, e digitar <code>start=""</code> e no start colocar 1,2 3.</p>
+        <h3>Listas não ordenadas</h3>
+                <p>São listas que não possuem uma ordem, apenas listam itens, como em uma lista de compras no supermercado. Basta usar a tag <code>ul</code>, e dentro dela colocar a tag <code>li</code>. A tag <code>ul</code> também tem os seus tipos, que são: <code>disc</code>, <code>circle</code> e <code>square</code>. Ex</p>
+                <ul>
+                <li>Tomate</li>
+                <li>Feijão</li>
+                <li>Arroz</li>
+                <li>Macarrão</li>
+                <li>Leite</li>
+                <li>Danone</li>
+                </ul>
+            <h3>Listas Mistas 1.0</h3>
+                <p>Para criar listas mistas é só criar uma <code>&lt;ol&gt;&lt;/ol&gt;</code> ou uma <code>&lt;ul&gt;&lt;/ul&gt;</code>, e abaixo de uma tag <code>&lt;li&gt;</code> que você criou, ex: Você criou uma <code>&lt;ol&gt;&lt;/ol&gt;</code> de jogos favoritos, e colocou uma <code>&lt;li&gt;</code> como Mario, abaixo de <code>&lt;li&gt;</code>, você criará uma outra <code>&lt;ul&gt;&lt;/ul&gt;</code>, ou <code>&lt;ol&gt;&lt;/ol&gt;</code> , e citar por meio de outra <code>&lt;li&gt;</code>, os jogos de Mario que você mais jogou. EX:</p>
+                <ol>
+                <li>Mario</li>
+                <ol type="a">
+                <li>Marios Bros</li>
+                </ol>
+            <h3>Listas de definições</h3>  
+            <p>Para criar uma lista de definições, basta abrir uma tag <code>&lt;dl&gt;&lt;/dl&gt;</code>, depois abrir uma tag <code>&lt;dt&gt;&lt;/dt&gt;</code> ( Que é o termo), e por fim abrir abaixo de <code>&lt;dt&gt;&lt;/dt&gt;</code>, uma tag <code>&lt;dd&gt;&lt;/dd&gt;</code> (descrição do termo). Ex:</p>
+                <dl>
+                    <dt>HTML</dt>
+                        <dd>linguagem de marcação para a criação do conteudo de um site.</dd>
+                    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+                    <dt>JavaScript</dt>
+                        <dd>Linguagem de progamação para a criação da interatividade de um site.</dd>
+                </dl>
+        <h4>ponto importante:</h4>
+            <p>Caso você queira que a sua lista, baseada em LETRAS, seja maiusculas ou minusculas, comece em uma ordem especifica, você não deve colocar, EX: e/E ou h/H. A lista pode até ser em letras, mas a ordem é numerica, então, se você quer que comece na letra 'e' por exemplo, você colocaria <code>start="5"</code>.
+            </p> 
+                <h2>Links</h2>
+                <h3>Links externos</h3>
+            <p>Para colocar links que vem de fora do seu site (links externos), como por exemplo, o seu canal do youtube, basta usar a tag<code> &lt;a href=""&gt;&lt;/a&gt;</code>. E isso é bem simples, basta dentro dela colocar a frase que vai ser usada como uma espécie de botão para o link, e em <code>href</code>, você colocará o link. Outra coisa, dentro da tag <code> &lt;a href=""&gt;&lt;/a&gt;</code>, você vai dar um espaço e digitar <code>target="_blank"</code>, e então dar mais um espaço e colocar <code>rel="external"</code>, que no final ficaria desse jeito:<code> &lt;a target="_blank" rel="external" href="Aqui vai ser colocado o link"&gt;Frase&lt;/a&gt;</code>. Exemplo:</p>
+            <p>Acesse o canal do <a target="_blank" rel="external" href="https://www.youtube.com/@cursoemvideo" class="progamaçao">professor Gustavo Guanabara (Curso em video)</a>! O melhor professor de progamação do mundo.</p>
+        <h3>Links internos</h3>
+            <p>Você pode fazer ligações atraves de links para paginas dentro do seu site, por exemplo, no Visual Studio code você pode fazer isso criando outro aquivo index. E na sua pagina principal (ou primeira pagina, melhor deixar como primeira), você vai usar a tag<code> &lt;a href=""&gt;&lt;/a&gt;</code> e na tag você vai colocar qualquer texto, tipo: acesse a segunda pagina aqui! E no <code>href=""</code>vai colocar o link, que no caso não precisa, é só apertar, com o cursor de texto entre as aspas, crtl + espaço, e selecionar o arquivo index que você criou. Não precisa ser index, pode ser pag002.html</p>
+            <p>No final, o codigo ficaria assim:</p>
+            <p>clique <code>&lt;a href="index.html"&gt;aqui!&lt;/a&gt;</code> para ir para a segunda pagina.</p>
+            <P>E no site, ficaria assim:</P>
+            <p>Clique <a href="pag002.html" rel="next">aqui!</a>Para ir para a segunda pagina.</p>
+            <P>Outra coisa, você precisa colocar depois da tag a, o <code>rel="next"</code>. Para indicar ao navegador, que essa é a segunda/proxima pagina. Isso, na primeira pagina, pois o link ta levando para uma proxima pagina. E na segunda, ao invés de <code>next</code>, você colocará <code>prev</code>, que indica que para o navegador, que esse link leva para uma página anterior.</P>
+            <p>e no final, o codigo em cada pagina ficaria assim:</p>
+        <h4>Pagina 1</h4>
+            <p>Clique <code>&lt;a href="pag002.html" rel="next"&gt;</code>aqui!<code>&lt;/a&gt;</code> Para ir para a segunda pagina.</p>
+        <h4>Pagina 2</h4>
+            <p>para voltar para a primeira pagina clique <code>&lt;a href="index.html" rel="prev"&gt;</code>aqui!<code>&lt;/a&gt;</code></p>
+        <h4>links internos em outra pasta</h4>
+            <p>Antes de fazer links, que levam para uma pagian que esta em uma pasta diferente, precisamos criar uma, e com o Visual Studio Code é simples. Vá para a pasta que esta o seu arquivo index, e crie uma nova pasta, por exemplo, uma pasta chamada noticias. Agora, no VS code, você ira no Explorador ( é onde fica tudo que ta na pasta, por exemplo, as imagens, as pag e etc...) e na pasta noticias, você irá apertar com o botão direito do mouse e selecionar novo arquivo, e colocará o nome como <code>pag003.html</code>. Tem que ser sempre assim, pag003, pag005... pag..7 e por aí vai. pois isso indica a ordem da página e ajuda ao navegador, a tratar a aquela pagina como ela sendo realmente uma pagina, seja ela anterior ou posterior á alguma outra pagina.</p>
+            <p>Agora, para um link, é a mesma coisa de antes, porém, como a pagina tá em uma outra pasta você vai fazer de um jeito um pouco diferente. Você vai apertar o crtl + espaço, e selecionar a pasta noticias, e nela, selecionar a <code>pag003.html.</code></p>
+            <p>No final o codigo ficaria assim: <code>&lt;a href="noticias/pag003.html" rel="next"&gt;</code>Acesse também a nossa página de notícias!<code>&lt;/a&gt;</p></code>
+            <p>E no site ficaria assim:</p>
+            <a href="../noticias/pag003.html" rel="next" class="noticias">Acesse também a nossa página de notícias!</a>
+            <p>E para voltar (isso estando na <code>pag003.html</code> no caso a pagina de notícias) é um pouco diferente. no <code>href=""</code>, invés de<code> pag001.html</code> ou <code>index.html</code>, ou seja lá qual nome você deu para a primeira página, você irá colocar dois pontos, barra, pag001.htm ou index, emfim, o nome que você colocou. Assim que você colocar ../ irá aparecer uma barrimha com os arquivos que estão na outra pasta. Como aparece normalmente ao apertar crtl + espaço. Aí você vai selecionar a primeira pagina, ou a segunda, se quiser voltar para ela. E o de sempre, colocar o <code>rel="prev"</code>. Para indicar ao navegador que o link leva para uma página anterior.</p>
+        <h3>Links para patrocinio</h3>
+            <p>Se você for fazer um link como por exemplo:</p>
+            <p>Este site é um oferecimento a <a href="https://www.hostnet.com.br" rel="nofollow" target="_blank" class="links-externos-ou-nao">hostnet</a></p>
+            <p>você deve colocar no rel="" nofollow, isso indica que você não tem tanta confiança no link, se ele é oficial, mas mesmo se for, de confiança, é bom colocar. Agora se o cliente pedir para o link não ser nofollow, aí você não coloca.</p>
+        <h3>Links para download</h3>
+                <ul>
+                <li><a href="Livro/PDF-de-exemplo.pdf" target="_blank" download="PDF-de-exemplo.pdf" type="application/pdf" class="download">Baixar o livro em PDF</a></li>
+                <li>Ou em ZIP... Mas eu não tenho um arquivo ZIP.</li>
+                </ul>
+            <p>Primeiro precisamos de um arquivo para baixar, e isso é bem simples. Na pasta onde esta o index, as pags, e as imagens você ira criar uma nova pasta, e nela colocar o arquivo PDF. E para colocar um link que direciona para uma outra pasta, isso você ja sabe né. O diferencial é que agora você vai dar um espaço depois tas aspas e colocar <code>download=""</code> </p>
+            <p> E entre as aspas você ira colocar o arquivo PDF. Irei dar um exemplo de como o codigo ficaria para você entender melhor:</p>
+            <p><a href="Livro/PDF-de-exemplo.pdf" download="PDF-de-exemplo.pdf" type="application/pdf" class="download">Baixar o livro em PDF</a></p>
+            &DownArrow;
+            <p><code>&lt;a href="Livro/PDF-de-exemplo.pdf" download="PDF-de-exemplo.pdf" type="applicatin/pdf"&gt;Baixar o livro em PDF&lt;/a&gt;</code></p>
+                <h2>Mídias em HTML5</h2>
+        <h3>Imagens dinâmicas</h3>
+            <picture>
+                <source media="(max-width: 800px)" srcset="../imagens/foto-p-ex.png" type="image/png">
+                <source media="(max-width: 1100px)" srcset="../imagens/foto-m-ex.png" type="image/png">
+                <img src="../imagens/foto-g-ex.png" alt="Imagen grande de exemplo">
+            </picture>
+            <p>Se você diminuir ou aumentar a aba do navegador, você irá perceber que a imagen se adequa ao tamanho, e fazer isso é bem simples.</p>
+            <p>Você vai precisar de 3 tamanhos para a sua imagen, uma versão de 1000px, uma de 700px, e uma de 300px de largura, altura nem importa tanto assim. Você irá colocar as imagens junto do index, e as coisas perto dele na pasta.</p>
+            <p>Agora, você irá usar a tag <code>&lt;picture&gt;&lt;/picture&gt;</code> e dentro dela, a tag <code>&lt;img src="" alt=""&gt;</code>. Agora, se a imagen em <code>&lt;img src="" alt=""&gt;</code> for de 1000px, pessoas em celular ou tablets vão ter que arrastar para o lado pra ver, e isso é ruim. e para resolver, basta acima de <code>&lt;img src="" alt=""&gt;</code>, colocar <code>&lt;source media="(max-width: )" srcset="" type="image/"&gt;</code> em (max-width: ) você irá colocar o tamanho maximo da largura da imagen, se o tamanho maximo da tela do usuario for menor que, por exemplo, 1000px, a imagen será substituida por outra, que no caso é a versão de 700px (serve pra tablets e pc), e para isso, você irá colocar a imagen, em srcset="". Em type, você deve completar com png, e você fará o mesmo, para 300px. No final, ficaria assim:  </p>
+<pre style="font-size: 0.55em;">
+&lt;picture&gt;
+&lt;source media="(max-width: 750px)" srcset="imagens/foto-p-ex.png" type="image/png"&gt;
+&lt;source media="(max-width: 1050px)" srcset="imagens/foto-m-ex.png" type="image/png"&gt;
+&lt;img src="imagens/foto-g-ex.png" alt="Imagen grande de exemplo"&gt;
+&lt;/picture&gt;
+</pre>
+        <h3>Áudios</h3>
+            <audio preload="metadata" controls>
+                <source src="../midias/fahhhhh.mp3" type="audio/mpeg">
+                <source src="../midias/fahhhhh.ogg" type="audio/ogg">
+            </audio>
+                <br>
+            <audio preload="metadata" controls>
+                <source src="../midias/oof.mp3" type="audio/mpeg">      <!--você pode colocar o loop, depois de controls, para tocar em loop-->
+                <source src="../midias/oof.ogg" type="audio/ogg">
+            </audio>
+                <br>
+            <audio preload="metadata" controls>
+                <source src="../midias/rizz.mp3" type="audio/mpeg">
+                <source src="../midias/rizz.ogg" type="audio/ogg">
+            </audio>
+            <p>Para colocar audios, você deve usar a tag, audio, assim:</p>
+<pre style="font-size: 0.95em;">
+&lt;audio preload="metadata" controls&gt;
+&lt;source src="midias/fahhhhh.mp3" type="audio/mpeg"&gt;
+&lt;source src="midias/fahhhhh.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;
+        
+&lt;audio preload="metadata" controls&gt;
+&lt;source src="midias/oof.mp3" type="audio/mpeg"&gt;
+&lt;source src="midias/oof.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;
+        
+&lt;audio preload="metadata" controls&gt;
+&lt;source src="midias/rizz.mp3" type="audio/mpeg"&gt;
+&lt;source src="midias/rizz.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;
+</pre>
+        <h3>Vídeos hospedados localmente</h3>
+            <p>Este vídeo esta hospedado no meu proprio servidor.</p>
+            <video preload="metadata" width="300px" poster="../imagens/thumbnail-cafe-ex.png" controls>
+                <source src="../midias/Video-Cafe-Ex-mp4.mp4" type="video/mp4">
+                <source src="../midias/Video-Cafe-Ex-webm.webm" type="videos/webm">
+                <source src="../midias/video-cafe-ex-OGV.ogv" type="video/ogv">
+            </video>
+            <p>Para colocar vídeos que estão hospedados localmente, você deve usar a tag vídeo assim:</p>
+<pre style="font-size: 0.67em;">
+&lt;video width="500" poster="imagens/thumbnail-cafe-ex.png" controls&gt;
+&lt;source src="midias/Video-Cafe-Ex-mp4.mp4" type="video/mp4"&gt;
+&lt;source src="midias/video-cafe-ex-mkv.mkv" type="video/mkv"&gt;
+&lt;source src="midias/Video-Cafe-Ex-webm.webm" type="videos/webm"&gt;
+&lt;source src="midias/video-cafe-ex-OGV.ogv" type="video/ogv"&gt;
+&lt;/video&gt;
+</pre>
+        <h3>Videos no youtube</h3>
+            <div class="video"><iframe width="700" height="400" src="https://www.youtube.com/embed/XstzCMoG0Sk?si=gspe6PTMhA9x2PPt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          
+                <br><br>
+            <p>Para colocar vídeos do Youtube no seu site, basta você ir no vídeo e ir em compartilhar, depois em incorporar, e então você vai copiar o link, e colar no HTML do seu site.</p>
+                <h2>Estética</h2>
+                <h3>Cores</h3>
+            <p>Uma boa forma de escolher as cores do seu site é usando o circulo cromático.</p>
+            <picture>
+                <source media="(max-width: 700px)" srcset="../imagens/CIRCULO-CROMATICO-14-300.jpg" type="image/jpg">
+                <img src="../imagens/CIRCULO-CROMATICO-14-original.jpg" alt="">
+            </picture>
+            <br><br>
+            <p>Recomendo você usar o circulo cromático do <a href="https://color.adobe.com/pt/create/color-wheel" rel="external" target="_blank" >Adobe</a>. É totalmente grátis.</p>
+        
+        
+        <h2>Tipografia</h2>
+            <picture>
+                <source media="(max-width: 780px)" srcset="../imagens/tipografia-anatomia-01-300.jpg" type="image/jpg">
+                <img src="../imagens/tipografia-anatomia-01-700.jpg" alt="">
+            </picture>
+        <h4>Fontes</h4>
+        <p>Fontes são muito importantes no seu site, e devem ser escolhidas com bastante atenção. Pois não adianta ter um site com um ótimo conteudo, mas ter uma apresentação que deixa a desejar. Então, na minha atual opnião, eu recomendo você utilizar a fonte Arial, Helvetica, sans-serif para tiltulos e subtitulos, e a fonte 'Times New Roman', Times, serif para paragráfos. Para colocar fontes é só você usar a tag <code>font-family</code>.</p>
+                <h2>Shorthand</h2>
+                <p>Shorthand é uma tecnica que ajuda você a encurtar o seu codigo css. Por exemplo, para usa-la em fontes (caso você tenha varias tags fontes) você deve usar a tag <code>font:</code>, e nela, colocar as suas tags font nesta ordem: font-style &rightarrow; font-weight &rightarrow; font-size &rightarrow; font-family. Se você tem, por exemplo, em um h1 tags font assim:</p>
+<pre style="font-size: 1em;">
+h1{
+ font-style: italic;
+ font-size: 3em;
+ font-weight: bolder
+ font-family: Arial, Helvetica, sans-serif;
+}
+</pre>
+        
+        <p>Encurtando ficaria assim:</p>
+<pre style="font-size: 1em;">
+font: italic bolder 3em Arial, Helvetica, sans-serif;
+</pre>
+        <h3>Border, Padding, Margin e Outline</h3>
+        <p>Para simplificar o <code>padding</code> e o <code>margin</code> você vai utilizar um padrão, que é top, right, bottom e left. Exemplo</p>
+<pre style="font-size: 1em;">
+h1 {
+    border-width: 5px; 
+    border-style: solid; 
+    border-color: black;
+
+    padding-top: 6px; 
+    padding-right: 6px; 
+    padding-bottom: 6px; 
+    padding-left: 6px;
+
+    margin-top: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 40px; 
+    margin-left: 20px; 
+
+    outline-width: 5px; 
+    outline-style: dashed; 
+    outline-color: gray;
+}
+</pre>
+            <p>Simplificando ficaria assim:</p>
+<pre style="font-size: 1em;">
+h1 {
+    border: 5px solid black;
+
+    padding: 6px 6px 6px 6px; ou padding: 6px;
+
+    margin: 20px 20px 40px 20px;
+
+    outline: 5px dashed gray;
+
+}
+</pre>
+                <h3>Alinhamento de texto</h3>
+            <p>Existem 4 tipos de alinhamento de texto usando css, justify, right, center, left. Que podem ser usados em diferentes textos (p, h1...).  Por exemplo, se você tem uma tag h1 e que colocar ela no centro no seu site, como um titulo mesmo, é só você ir no css do seu site e colocar o h1 como text-align: center;</p>
+            <p> O mesmo vale para justify, right e left.</p>
+
+                <h2>Identificações, pseudo-classes e pseudo-elementos</h2>
+                <h3>id</h3>
+            <p>Os id são uma forma de você identificar um elemento no HTML do seu site, para possibilitar uma personificação mais complexa dele no css. Para aplicar uma id á uma tag html basta você ir nela, por exemplo, uma tag h1, dar um espaço e color car id="". Dentro de id é que você irá colocar a identificação dela, por exemplo id="Titulo-principal". E na área de css do seu site você irá colocar # e a id que você colocou: </p>
+        <pre>
+            #Titulo-principal
+
+        </pre>
+            <p>Alem disso, você não pode colocar mais de um elemento com a mesma id. Isso é o papel da Class</p>
+
+        <h3>Class</h3>
+        <p>As class servem como uma forma de identificação de um elemento, porém, diferente do id ela pode ser utilizada mais de uma vez em um elemento. E para usa-la você deve colocar . (ponto) e o nome da Class.</p>
+        
+
+        <h3>Pseudo-classes</h3>
+        <p>Pseudo-classes servem para você personalizar também, porém elas precisam estar relacionadas a um elemento ou uma classe. As Pseudo-classes estão relacionadas a o estado de um determinado elemento, se ele esta active, empty, entre outros. E para usa-la você vai usar : (dois pontos). Se eu por exemplo, criar uma div e quiser atribuir a ela o hover basta eu digitar:</p>
+        <pre>
+             div:hover{
+
+             }
+        </pre>
+        
+        <p>Ao colocar hover eu estou dizendo que se o usuario passar o mouse por cima daquela div, algo irá acontecer. E podemos definir o que irá acontecer de uma forma bem simples, por exemplo, colocando a tag background-color. Logo se o usuario passar o mouse por cima o background da div irá mudar. Exemplo:</p>
+
+        <div id="d1" class="exemplo">01</div>
+        <div id="d2" class="exemplo">01</div>
+        <div id="d3" class="exemplo">03</div>
+        
+        <h3>Elementos dentro de uma div</h3>
+            <p>Se você colocar uma <code>div</code> no seu style e adicionar > e algum outro elemento, esse elemento que foi colocado depois de <code>></code> será afetado pelo que estiver escrito dentro dele, por exemplo: <code>div > p {...}</code>. O <code>p</code> que estiver dentro da div irá sofrer as alterações que você colocou. Exemplo:</p>
+            <p>Passe o mause neste quadrado</p>
+
+            <div id="div-de-exemplo-em-elementos-dentro-de-uma-div">passe o mouse aqui.
+                <p>Escondido</p>
+                <p>Escondido também</p>
+                <p>Escondido</p>
+            </div>
+            
+<pre>
+    #div-de-exemplo-em-elementos-dentro-de-uma-div{
+  display: inline-block;
+  background-color: #f7ffa5ab;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}
+
+
+#div-de-exemplo-em-elementos-dentro-de-uma-div > p{
+  display: none;
+}
+
+
+#div-de-exemplo-em-elementos-dentro-de-uma-div:hover > p{
+  display: block;
+  color: #11ff00;
+  border: 1px solid black;
+
+}
+</pre>
+            <p>Neste style eu personalizei a div e depois eu indiquei que o <code>p</code> que esta dentro da <code>div</code> terá o <code>display: none;</code>, ou seja, o <code>p</code> ficará invisível. Porém se eu passar o mouse por cima ( como está nas ultimas declarações) o <code>p</code> terá o <code>display: block;</code>, ou seja ficará visivel, e terá como eu coloquei, <code>color</code> e <code>border</code> personalizados.</p>
+        
+            <p>Você pode também atribuir a Pseudo-classe <code>visited</code> a um link. O que indica que, todo link que ja foi visitado será alterado de acordo com o que estiver dentro de <code>a: active{}</code>. Por exemplo, se eu colocar <code>color: green</code>., todo link que ja foi visitado ficará verde.</p>
+
+
+            <h3>Pseudo-elementos</h3>
+            <p>Os Pseudo-elementos interferem diretamente com o conteudo do seu site, que para representa-lo usa-se :: (2x dois pontos). Por exemplo, se você colocar <code>a::after{ content: '\2B05' }</code> os links ficaram com uma seta, que é representada pelo codigo entre aspas. O mesmo serve para <code>a::before{ content: '\27A1' }</code>.</p>
+                <h2>Caixa</h2>
+                <h3>Tipos de caixa</h3>
+            <picture>
+                <source media="(max-width:800px )" srcset="../imagens/tipos-de-caixa-300.png" type="image/png">
+                <source media="(max-width:970px )" srcset="../imagens/tipos-de-caixa-700.png" type="image/png">
+                <source media="(max-width:1100px )" srcset="../imagens/tipos-de-caixa.png" type="image/png">
+                <img src="../imagens/tipos-de-caixa-1000.png" alt="">
+            </picture>
+        
+            <h3>Modelo de caixa</h3>
+            <picture>
+                <source media="(max-width:610px )" srcset="../imagens/modelo-de-caixa-300.png" type="image/png">
+                <source media="(max-width:812px )" srcset="../imagens/modelo-de-caixa-500.png" type="image/png">
+                <source media="(max-width:1000px )" srcset="../imagens/modelo-de-caixa-700.png" type="image/png">
+                <source media="(max-width:1100px )" srcset="../imagens/modelo-de-caixa-900.png" type="image/png">
+                <img src="../imagens/modelo-de-caixa-1000.png" alt="">
+            </picture>
+            <br>
+            <p>A partir do modelo de caixa você pode personalizar a vontade as box do seu site, seja ela em <code>&lt;h1&gt; - &lt;h6&gt;</code> ou <code> &lt;p&gt;</code>, entre outros.</p>
+            <br>
+            <br>
+            <h1>Este é o fim do Guia Resumido de HTML5 e CSS3</h1>
+            <br><br><br>
+
+        </article>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Thiago César Brunes Medeiros</p>
+    </footer>
+    <aside>
+        <p>Acesse também:</p>
+        <hr>
+    </aside>
+</body>
+</html>
